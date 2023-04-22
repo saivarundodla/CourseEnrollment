@@ -1,0 +1,28 @@
+/*User*/
+INSERT INTO `courseenrollment`.`user` (`user_id`, `contact_no`, `email_id`, `first_name`, `last_name`, `login_id`, `password`) 
+VALUES (1, '4699849787', 'dnirmal@gmail.com', 'nirmal', 'devarasetty', 'dnirmal', 'test123');
+
+INSERT INTO `courseenrollment`.`user` (`user_id`, `contact_no`, `email_id`, `first_name`, `last_name`, `login_id`, `password`) 
+VALUES (2, '4699849346', 'dvivek@gmail.com', 'vivek', 'dantuluri', 'vivekd', 'test123');
+
+INSERT INTO `courseenrollment`.`user` (`user_id`, `contact_no`, `email_id`, `first_name`, `last_name`, `login_id`, `password`) 
+VALUES (3, '4695346725', 'konetiakshay@gmail.com', 'akshay', 'konety', 'konety', 'test123');
+
+INSERT INTO `courseenrollment`.`user` (`user_id`, `contact_no`, `email_id`, `first_name`, `last_name`, `login_id`, `password`) 
+VALUES (4, '4695346725', 'konetiakshay@gmail.com', 'admin', 'admin', 'admin', 'admin');
+
+/*Course*/
+INSERT INTO `courseenrollment`.`course` (`course_id`, `capacity`, `course_name`, `professor_name`) 
+VALUES (1, 10, 'Database Management System', 'Mark Albert');
+
+INSERT INTO `courseenrollment`.`course` (`course_id`, `capacity`, `course_name`, `professor_name`) 
+VALUES (2, 3, 'Introduction to Computer Security', 'Asif Baba');
+
+INSERT INTO `courseenrollment`.`course` (`course_id`, `capacity`, `course_name`, `professor_name`) 
+VALUES (3, 2, 'Computer Network', 'Robert Akl');
+
+INSERT INTO `courseenrollment`.`course` (`course_id`, `capacity`, `course_name`, `professor_name`) 
+VALUES (4, 1, 'Data Analytics', 'Renee Bryce');
+
+/*Enrollment*/
+INSERT INTO `courseenrollment`.`enrollment` (`id`, `course_id`, `user_id`) VALUES (1, 1, 1);
